@@ -10,8 +10,8 @@
 `$ react-native link react-native-star-printer-2`
 
 * You need to link the following frameworks into your Xcode project 
-    1. Go to `node_modules/react-native-star-printer-2/ios`
-    2. Drag the `StarIO.framework` and `StarIO_Extension.framework` under your `project-path/Frameworks` folder
+    1. Go to `https://www.starmicronics.com/support/sdkdocumentation.aspx` and download the iOS SDK
+    2. Drag the `StarIO.framework` and `StarIO_Extension.framework` found in the SDK under your `project-path/Frameworks` folder
     3. Add `CoreBluetooth.framwork` and `ExternalAccessory.framework` in the `Link Binary with Libraries` build phase
 
 ### Manual installation
