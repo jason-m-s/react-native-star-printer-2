@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ npm install react-native-star-printer-2 --save`
+`$ npm install react-native-star-printer-2 --save` (not hosted on npm yet. Download the package, extract and use `npm install path/to/package`)
 
 ### Mostly automatic installation
 
