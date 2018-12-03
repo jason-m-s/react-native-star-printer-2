@@ -14,8 +14,6 @@
 		6F35605321AD678600EC9094 /* PrinterSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F35605221AD678600EC9094 /* PrinterSetting.m */; };
 		6F547A7321B10F2C00CCEABF /* CommandQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F547A7221B10F2C00CCEABF /* CommandQueueManager.m */; };
 		6F640E7921943B1F001A7BFD /* StarPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F640E7821943B1F001A7BFD /* StarPrinter.m */; };
-		6FE57E5D21B52AD3009B344F /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE57E5B21B52AD3009B344F /* StarIO.framework */; };
-		6FE57E5E21B52AD3009B344F /* StarIO_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE57E5C21B52AD3009B344F /* StarIO_Extension.framework */; };
 		6FF1980921A57C2300DCA472 /* DictionaryMappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1980821A57C2300DCA472 /* DictionaryMappable.m */; };
 		6FF1980C21A57D4D00DCA472 /* PortInfo+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1980B21A57D4D00DCA472 /* PortInfo+Categories.m */; };
 /* End PBXBuildFile section */
@@ -46,8 +44,6 @@
 		6F547A7221B10F2C00CCEABF /* CommandQueueManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandQueueManager.m; sourceTree = "<group>"; };
 		6F640E7821943B1F001A7BFD /* StarPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarPrinter.m; sourceTree = "<group>"; };
 		6F6410DB21955BA4001A7BFD /* StarPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarPrinter.h; sourceTree = "<group>"; };
-		6FE57E5B21B52AD3009B344F /* StarIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StarIO.framework; sourceTree = "<group>"; };
-		6FE57E5C21B52AD3009B344F /* StarIO_Extension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StarIO_Extension.framework; sourceTree = "<group>"; };
 		6FF1980821A57C2300DCA472 /* DictionaryMappable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryMappable.m; sourceTree = "<group>"; };
 		6FF1980B21A57D4D00DCA472 /* PortInfo+Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PortInfo+Categories.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,8 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FE57E5E21B52AD3009B344F /* StarIO_Extension.framework in Frameworks */,
-				6FE57E5D21B52AD3009B344F /* StarIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +78,6 @@
 				6F6410DB21955BA4001A7BFD /* StarPrinter.h */,
 				6F640E7821943B1F001A7BFD /* StarPrinter.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				6F640FED21954434001A7BFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,15 +126,6 @@
 				6F547A7221B10F2C00CCEABF /* CommandQueueManager.m */,
 			);
 			name = Queues;
-			sourceTree = "<group>";
-		};
-		6F640FED21954434001A7BFD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6FE57E5B21B52AD3009B344F /* StarIO.framework */,
-				6FE57E5C21B52AD3009B344F /* StarIO_Extension.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +305,8 @@
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../../ios",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,7 +334,8 @@
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../../ios",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
