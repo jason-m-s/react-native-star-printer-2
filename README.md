@@ -48,4 +48,29 @@ const StarPrinter = NativeModules.StarPrinter;
 
 // TODO: What to do with the module?
 StarPrinter;
-  
+
+// The following commands are exposed by the native bridge
+
+// 1. Scan for printers
+StarPrinter.searchPrinter("target") //target: "BT:" "BLE:" "TCP:" "USB:"
+
+// 2. Print base64 image
+StarPrinter.printBase64Image(
+                base64Image,
+                printer.portName,
+                printer.modelName,
+                StarPrinter.PaperSizes.ThreeInch)
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error))
+            
+// 3. Print HTML String (css supported)
+StarPrinter.printHtmlString(
+                htmlString,
+                printer.portName,
+                printer.modelName,
+                StarPrinter.PaperSizes.ThreeInch,
+                height)
+                .then((response) => console.log(response + ": Success"))
+                .catch((error) => console.log(error));
+```
+
