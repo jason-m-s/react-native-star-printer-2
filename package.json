@@ -1,0 +1,18 @@
+{
+  "name": "react-native-star-printer-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native", "react-native-star-printer2"
+  ],
+  "author": "Jason Mathew <jasonsaparamadu@yahoo.com>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "16.6.0",
+    "react-native": "^0.57.4"
+  }
+}
